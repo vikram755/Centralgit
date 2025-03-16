@@ -1,16 +1,13 @@
 name: Build and Deploy
- 
- on:
+on:
    push:
      branches:
        - main  # Trigger the workflow on pushes to the main branch
-  pull_request:
+pull_request:
     branches:
       - main  # Trigger the workflow on pull requests to the main branch
 
-
- 
- jobs:
+jobs:
    build:
      name: Build
      runs-on: ubuntu-latest  # Use the latest Ubuntu runner
